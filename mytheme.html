@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>My Page</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!El enlace siguiente es del estilo css de la barra de navegacion>
+  <link rel="stylesheet" type="text/css" href="css/barra.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+</head>
+
+  <body style="background-color:rgb(208, 199, 187);">
+    <nav class="navegador">
+      <ul>
+        <li><a href="/media/">Media</a></li>
+        <li><a href="/index/">Homepage</a></li>
+        <li><a href="/signup/">Blogs</a></li>
+      </ul>
+    </nav>
+
+<div class="slider" style="max-width:1297px">
+
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header.png" alt="The Geek Evolution" style="max-width:1297px">
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header1.png" alt="The Geek Evolution" style="max-width:1297px">
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header2.png" alt="The Geek Evolution" style="max-width:1297px">
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header3.png" alt="The Geek Evolution" style="max-width:1297px">
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header4.png" alt="The Geek Evolution" style="max-width:1297px">
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header5.png" alt="The Geek Evolution" style="max-width:1297px">
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header6.png" alt="The Geek Evolution" style="max-width:1297px">
+    <img class="slides" src="/home/docen67/Documents/Atom proyecs/My Html Theme/image/banner-header7.png" alt="The Geek Evolution" style="max-width:1297px">
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
+
+<h1>The Geek Evolution</h1>
+
+    <section>
+      <article>
+        <p>Hello
+          <p>Pruebe</p>
+          <p>Bye</p>
+      </article>
+    </section>
+
+  </body>
+</html>
